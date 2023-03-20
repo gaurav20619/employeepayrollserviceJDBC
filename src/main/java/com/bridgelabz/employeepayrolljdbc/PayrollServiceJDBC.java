@@ -16,7 +16,7 @@ public class PayrollServiceJDBC {
 			if (statement != null) {
 				System.out.println("connection is successful:");
 			}
-			ResultSet output = statement.executeQuery("select * from employee_payroll ;");
+			ResultSet output = statement.executeQuery("select * from employee_payroll where name = 'terissa' ;");
 			
 			  while(output.next()) { System.out.print("id: "+output.getInt(1)+"\t");
 			  System.out.println("name: "+output.getString(2));
